@@ -22,6 +22,7 @@ public class LoginClass {
     public String login(Person person){
         Person person1 = personService.ServiceLogin(person.getName(), person.getPassword());
         if(person1!=null){
+            System.out.println("登录成功");
             /*登录成功*/
             return "redirect:/ok.jsp";
         }
